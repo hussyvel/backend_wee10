@@ -1,0 +1,43 @@
+Semana Omnistack 
+
+mkdir week10
+
+dentro de week10 criar a pasta backend
+
+yarn init -y 
+
+package.json = ele diz que é um projeto javascript, anota ou descreve o projeto. 
+
+yarn add express  = adicionando uma nova dependência
+
+criar um index.js e dentro do arquivo
+	const express = require('express')
+	
+	const app = express ();
+	app.get('/', (request, response) => {
+		//return reponse.send('Hello World'); comentário
+		return response.json({message: "Hello Hussyvel"});
+});
+	app.listen(3333);
+----------------------------------------------
+yarn add nodemon 
+
+yarn nodemon index.js
+
+
+yarn add mongoose
+
+
+
+
+
+//Métodos http: GET, POST, PUT, DELETE
+//tipos de parâmetros:
+//Query Params: request.query(Filtros, ordenação, paginação...)
+//Route Params: request.params(identifica um recurso na alteração ou remoção )
+//Body: request.body (Dados para criação ou alteração de um registro)
+
+
+//MongoDB (banco de dados não relacional)
+
+
